@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+       
+        <title>wtalk - Login</title>
+
+       <link href="resources/css/css.css" rel="stylesheet" type="text/css" />
+    </h:head>
+
+    <h:body>
+        <h:form>
+              <tr>
+                    <td><table width="500" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td><img src="resources/img/bg_login_sombra.jpg" alt="" width="1390" height="50" class="fundo2"/></td>
+                            </tr>
+                        </table></td>
+                </tr>
+            <table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+                 <tr>
+                                <td colspan="4" valign="top"><img src="resources/img/logo.jpg" alt="" width="502" height="170" class="logo"/></td>
+                 </tr>
+                <tr>
+                    <td><table  height="295" border="0" align="left" cellpadding="0" cellspacing="0" background="resources/img/bg_login.jpg" class="fundo">
+                           
+                            <tr>
+                                <td width="1000" height="10" align="center" class="ContentLogin"><h:outputLabel value="Login" />&nbsp;</td>
+                                <td colspan="3" ><p:inputText value="#{UsuarioLogadoBean.usuario.login}" id="clogin" required="true" requiredMessage="Campo LOGIN obrigatório" class="campo1login"/></td>
+                            </tr>
+                            <tr>
+                                <td width="1000" height="10" align="center" class="ContentLogin"><h:outputLabel value="Senha"/>&nbsp;</td>
+                                <td colspan="3"><p:password value="#{UsuarioLogadoBean.usuario.senha}" id="csenha" required="true" requiredMessage="Campo SENHA obrigatório" class="campo2login"/></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td width="3">&nbsp;</td>
+                                <td ><p:commandButton value="Confirmar" action="#{UsuarioLogadoBean.verificarLogin()}" class="buttonLogin"/></td>
+                            </tr>
+                            <tr>
+                                <td height="100">&nbsp;</td>
+                                <td colspan="3">&nbsp;</td>
+                            </tr>
+                        </table></td>
+                </tr>
+                <tr>
+                    <td><table width="500" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td><img src="resources/img/bg_login_sombra.jpg" alt="" width="1390" height="112" class="fundo1"/></td>
+                            </tr>
+                        </table></td>
+                </tr>
+            </table>
+        </h:form>
+        <h:messages />
+    </h:body>
+</html>

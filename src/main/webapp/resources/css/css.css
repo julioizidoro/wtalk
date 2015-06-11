@@ -1,0 +1,273 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,400);
+
+.logo{
+    margin-top:-15px;
+      margin-left:390px; 
+}
+.fundo{
+    width:1390px;
+    margin-left:-10px; 
+}
+.fundo1{
+    margin-left:-10px;
+}
+.fundo2{
+    margin-left:-10px;
+    margin-top:-15px;
+}
+.ContentLogin {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 19px;
+	color: #FFFFFF;
+        margin-right:1590px;
+       
+}
+
+.formLogin {
+	font-family: Arial;
+	font-size: 11px;
+	color: #000000;
+	border-bottom-color:#d5d6d9;
+	border-bottom:thin;
+	border-left:thin;
+	border-right:thin;
+	border-top:thin;
+	width:237px;
+	height:22px;
+    
+}
+.campo1login{
+     margin-top:20px;
+     margin-left:-450px;
+   -webkit-border-top-left-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-bottomright: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.campo2login{
+     margin-top:12px;
+     margin-left:-450px;
+     -webkit-border-top-left-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-bottomright: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
+
+.buttonLogin {
+         background: -webkit-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+        background: -moz-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+        background: -o-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+        background: -ms-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+        background: linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+        margin-left:-300px;
+	width:120px;
+	height:32px;
+	-webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-top:-150px;
+}
+.button1 { 
+         background: -webkit-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+        background: -moz-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+        background: -o-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+        background: -ms-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+        background: linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+        font-size:15px;
+        text-align: center;
+        
+        margin-left:10px;
+	width:110px;
+	height:32px;
+	-webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-top:-150px;
+}
+#margin-top{
+     margin-top:-340px;
+}
+.titulo {
+	font-family: Arial;
+	font-size: 24px;
+	color: #074965;
+	font-weight:500;
+}
+.olá{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top:-150px;
+    margin-left:1200px;
+}
+.logoPrincial{
+    margin-top:-40px;
+     margin-left:10px;
+}
+.fundo3{
+    margin-left:-10px;
+    margin-top:-15px;
+}
+.fundo4{
+    margin-left:-10px;
+    margin-top:-3px;
+}
+.MenuPrincipal {
+	font-family: Arial;
+	font-size: 12px;
+	color: #074965;
+	font-weight:600;
+	background-color:#1E90FF;
+	height:25px;
+}
+.submenu {
+	font-family: Arial;
+	font-size: 11px;
+	color: #074965;
+	background-color:#d7e4f9;
+	height:28px;
+}
+.txtForm {
+	font-family: Arial;
+	font-size: 12px;
+	color: #074965;
+	height:20px;
+}
+.formUnidade {
+	font-family: Arial;
+	font-size: 11px;
+	border-color:#d4d5d8;
+	border-width:1px;
+	border-style:solid;
+	width:378px;
+	height:22px;
+}
+.formContent {
+	font-family: Arial;
+	font-size: 11px;
+	border-color:#d4d5d8;
+	border-width:1px;
+	border-style:solid;
+	width:490px;
+	height:22px;
+}
+.formFinal {
+	font-family: Arial;
+	font-size: 11px;
+	border-color:#d4d5d8;
+	border-width:1px;
+	border-style:solid;
+	width:91px;
+	height:22px;
+}
+
+.formProdutos {
+	font-family: Arial;
+	font-size: 11px;
+	border-color:#d4d5d8;
+	border-width:1px;
+	border-style:solid;
+	width:490px;
+	height:22px;
+       
+}
+.buttonSeleionar {
+	background-image:url(resources/img/bt_selecionar.jpg);
+	width:97px;
+	height:21px;
+	border:0px;
+}
+.buttonCancelar {
+	background-image:url(resources/img/bt_cancelar.jpg);
+	width:91px;
+	height:21px;
+	border:0px;
+}
+.buttonImportar {
+	background-image:url(resources/img/bt_importar.jpg);
+	width:91px;
+	height:21px;
+	border:0px;
+}
+.buttonConfirmar {
+	background-image:url(resources/img/bt_confirmar.jpg);
+	width:95px;
+	height:21px;
+	border:0px;
+}
+.calendar {
+	background-image:url(resources/img/bt_calendar.jpg);
+	width:19px;
+	height:18px;
+	border:0px;
+}
+.pagina {
+   color:#9ACD32;
+}
+
+
+/* Definição de estilos para toda a tabela*/
+
+.tabela {
+
+     border: 0px solid ;
+
+}
+
+ 
+
+/* Definição de estilos para linha de cabeçalho da tabela*/
+
+.cabecalho {
+
+   text-align: center;
+
+   font: 16px Arial, sans-serif;
+
+   font-weight: bold;
+}
+
+ 
+
+/* Definição de estilos para coluna */
+
+.alta {
+
+   text-align: center;
+
+   font: 14px Arial, sans-serif;
+   color:#EEE9E9;
+   background: #B22222;
+
+}
+
+ 
+
+/* Definição de estilos para coluna */
+
+.media {
+
+   font: 14px Arial, sans-serif;
+
+   text-align: center;
+   color:#EEE9E9;
+   background: #FFFF00;
+
+}
+.baixa {
+
+   font: 14px Arial, sans-serif;
+
+   text-align: center;
+   color:#EEE9E9;
+   background:#9ACD32;
+
+}
+
+-->

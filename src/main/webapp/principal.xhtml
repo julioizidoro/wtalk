@@ -1,0 +1,64 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title>wtalk - Principal</title>
+
+        <link rel="stylesheet" type="text/css"  href="resources/css/css.css"/> 
+    </h:head>
+    <h:body class="pagina">
+        <div>
+            <td><img src="resources/img/bg_login_sombra.jpg" alt="" width="1360" height="150" class="fundo3"/></td>
+        </div>
+        <div>
+            <td><img src="resources/img/logo.jpg" width="315" height="100" class="logoPrincial"/></td>
+        </div>
+        <div>
+            <td>
+                <h:form>
+                    <table  height="325" background="#A2CD5A">
+                        <div>
+                            <h:outputLabel value="olá " class="olá"/>
+                            <h:outputLabel value="#{UsuarioLogadoBean.usuario.nome}" />
+                        </div>
+                        <h:panelGrid columns="3">
+                            <p:commandButton value="Nova" action="#{ComunicacaoMB.nova()}" icon="ui-icon-arrowrefresh-1-e"   class="button1" ajax="false"/>
+                            <p:commandButton value="Atualizar" icon="ui-icon-arrowrefresh-1-e" action="#{ComunicacaoMB.atualizar()}"  class="button1">
+                                <f:param name="idUsuario" value="#{UsuarioLogadoMB.usuario.idusuario}"/>
+                            </p:commandButton>
+                            <p:commandButton value="Filtrar" image="resources/img/atualizar.png" action="#{ComunicacaoMB.filtrar()}"  class="button1"/>
+                        </h:panelGrid>
+                        <h:panelGrid columns="1" >
+                            <p:dataTable var="comunica" value="#{ComunicacaoMB.listaComunicacao}" paginator="true" rows="10" styleClass="tabela" 
+                                         rowStyleClass="#{comunica.prioridade eq 'Alta' ? 'alta' : 
+                                                          comunica.prioridade eq 'Media' ? 'media' :
+                                                          comunica.prioridade eq 'Baixa' ? 'baixa' :
+                                                          null}" >
+                                <p:column headerText="Data Inicio" styleClass="cabecalho">
+                                    <h:outputLabel value="#{comunica.dataInicio}" >
+                                        <f:convertDateTime pattern="dd/MM/yyyy"/>
+                                    </h:outputLabel>
+                                </p:column>
+                                <p:column headerText="Hora Inicio">
+                                    <h:outputLabel value="#{comunica.horaInicio}"/>
+                                </p:column>    
+                                <p:column headerText="Assunto">
+                                    <h:outputLabel value="#{comunica.assunto}"/>
+                                </p:column>    
+                                <p:column headerText="Prioridade">
+                                    <h:outputLabel value="#{comunica.prioridade}"/>
+                                </p:column>
+                            </p:dataTable>
+                        </h:panelGrid>
+                    </table>
+                    <div>
+                        <td><img src="resources/img/bg_login_sombra.jpg" alt="" width="1360" height="100" class="fundo4"/></td>
+                    </div>
+                </h:form>
+            </td>
+        </div>
+    </h:body>
+</html>

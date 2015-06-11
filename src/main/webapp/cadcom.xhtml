@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>wtalk - Comunicação</title>
+
+<link rel="stylesheet" type="text/css"  href="resources/css/css.css"/> 
+</h:head>
+
+    <h:body style="pagina">
+<div><img src="resources/img/logo.jpg" width="297" height="100" /></div>
+<p>&nbsp;</p>
+<div>
+    <h:outputLabel value="#{ComunicacaoMB.titulo}"/>
+</div>
+<p>&nbsp;</p>
+<div>
+     <h:form >
+            <h:panelGrid columns="3" >
+                <h:outputLabel value="Data/Hora da Abertura : "/>
+                <h:outputLabel value="#{ComunicacaoMB.comunicacao.dataInicio}">
+                               <f:convertDateTime pattern="dd/MM/yyyy"/>
+                </h:outputLabel>
+                <h:outputLabel value="#{ComunicacaoMB.comunicacao.horaInicio}"/>
+            </h:panelGrid>
+         <h:panelGrid columns="2">
+              <h:outputLabel value="Prioridade :" />
+              <p:selectOneMenu id="idprioridade" value="#{ComunicacaoMB.comunicacao.prioridade}" editable="false">
+                <f:selectItem itemLabel="Selecione Prioridade" itemValue="" />
+                <f:selectItem itemLabel="Baixa" itemValue="Baixa" />
+                <f:selectItem itemLabel="Média" itemValue="Média" />
+                <f:selectItem itemLabel="Alta" itemValue="Alta" />
+             </p:selectOneMenu>
+             <h:outputLabel value="Assunto :" />
+             <p:inputText  id="assunto" value="#{ComunicacaoMB.comunicacao.assunto}" size="50"
+                           maxlength="100" required="true" requiredMessage="Assunto é campo obrigatório"/>
+             <h:outputLabel value="Para :" />
+             <p:selectOneMenu id="user" value="#{ComunicacaoMB.idUsuario}" effect="fold" editable="false">
+                 <f:selectItem itemLabel="Selecione Destinátario" itemValue="" />
+                 <f:selectItems value="#{ComunicacaoMB.listaUsuario}" var="usuario" itemLabel="#{usuario.nome}" itemValue="#{usuario.idusuario}"/>
+             </p:selectOneMenu>
+             <h:outputLabel value="Interação : "/>
+             <h:outputLabel value=""/>
+             <h:outputLabel value=""/>
+             <p:inputTextarea rows="10" cols="50" value="#{ComunicacaoMB.interacao.assunto}" 
+                              queryDelay="750" minQueryLength="4" rendered="true" requiredMessage="Interação campo obrigatório"/>
+            <p:commandButton value="Salvar" image="resources/img/atualizar.png" action="#{ComunicacaoMB.salvar()}"/>
+            <p:commandButton value="Cancelar" image="resources/img/atualizar.png" action="#{ComunicacaoMB.cancelar()}"/>
+         </h:panelGrid>
+     </h:form>
+</div>
+</h:body>
+</html>
